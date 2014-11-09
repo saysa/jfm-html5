@@ -10,6 +10,7 @@ Tags: white, black, gray, light, one-column, two-columns, right-sidebar, fixed-w
 /* TABLE OF CONTENT
  * ==================
  * 1.  BASE
+ * 2.0 CASING
  * 2.  HEADER
  * 3.  NAVIGATION MENU
  * 4.  HOMEPAGE
@@ -56,7 +57,7 @@ a:hover {
 
 #container,
 .content-wrap{
-    width: 1110px;
+    width: 980px;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -105,6 +106,15 @@ a:hover {
     padding: 8px 15px;
     text-align: center;
     margin: 5px 0;
+}
+
+/* 2.0. CASING
+ * ======================== */
+#casing {
+    background: black url("../img/casing/hg3/hab-int-hg3.jpg") no-repeat 50% 0;
+}
+#casing-top {
+    height: 210px;
 }
 
 /* 2. HEADER
@@ -295,7 +305,6 @@ a:hover {
 .ticker-section{
     overflow: hidden;
     border-bottom: 1px solid #ECECEC;
-    margin-bottom: 30px;
     background: #F2F2F2;
 }
 
