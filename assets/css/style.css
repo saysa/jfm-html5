@@ -108,6 +108,11 @@ a:hover {
     margin: 5px 0;
 }
 
+@font-face {
+    font-family: 'Interstate';
+    src: url('../fonts/interstate.ttf');
+}
+
 /* 2.0. CASING
  * ======================== */
 #casing {
@@ -341,6 +346,193 @@ a:hover {
     top: 4px;
     padding: 0;
     background: none;
+}
+
+/* 3. NAVIGATION MENU
+ * ======================== */
+
+
+/* ========= Primary Menu ========= */
+.navbar {
+    border-radius: 0;
+}
+.navbar-default {
+    border: none;
+}
+
+nav .container-fluid {
+    padding: 0;
+    margin: 0;
+}
+nav .container-fluid>.navbar-collapse {
+    margin: 0;
+    padding: 0;
+}
+
+.primary-menu .mobile-menu{
+    overflow: hidden;
+}
+
+.primary-menu .menu-slide {
+    display: none;
+    width: 100%;
+    position: relative;
+    color: #FFFFFF;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.primary-menu .mobile-menu .icon {
+    float: right;
+}
+
+.primary-menu .mobile-menu .icon i{
+    font-size: 24px;
+    margin-top: 0;
+    padding: 0;
+}
+
+.primary-menu .content-wrap{
+    overflow: visible;
+}
+
+.primary-menu {
+    width: 100%;
+    /*background: #414140;*/
+    background: #A60000;
+    position: relative;
+    display: block;
+    z-index: 30;
+    font-family: 'Noto Sans', Helvetica, Arial, sans-serif;
+}
+
+.primary-menu ul {
+    float: left;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    z-index: 99;
+}
+
+.primary-menu ul.navbar-nav li {
+    float: left;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+}
+
+.primary-menu ul.navbar-nav li a {
+    display: block;
+    padding: 14px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    color: #FFF;
+}
+
+.primary-menu .current-menu-item ,
+.primary-menu .current_page_item,
+.primary-menu ul.navbar-nav li a:hover{
+    background: #414140;
+    color: #FFF;
+}
+
+.primary-menu ul li ul {
+    display: none;
+    position: absolute;
+    padding: 0;
+    margin-top: 0;
+}
+
+.primary-menu ul.navbar-nav li ul li {
+    float:none;
+    padding:0px;
+}
+
+.primary-menu ul li ul li a,
+.primary-menu ul li:hover ul li a,
+.primary-menu ul li.over ul li a {
+    padding: 10px 12px;
+    display: block;
+    width: 150px;
+    text-align: left;
+    height: auto;
+    background: #A60000;
+    font-size: 14px;
+    font-weight: 700;
+    border-bottom: 1px solid #FFFFFF;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    color: #FFFFFF;
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: none;
+}
+
+.primary-menu ul li ul li:hover a,
+.primary-menu ul li ul li.over a {
+    color: #FFFFFF;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.primary-menu ul li ul li ul {
+    display: none;
+    position: absolute;
+    left: 174px;
+    top: -1px;
+}
+
+.primary-menu ul li ul li:hover ul,
+.primary-menu ul li ul li.sfHover ul {
+    display: block;
+    position: absolute;
+    left: 174px;
+    top: 0;
+}
+
+.primary-menu ul li ul li:hover ul li a,
+.primary-menu ul li ul li.over ul li a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.primary-menu ul li ul li ul li a:hover {
+    color: #FFFFFF;
+}
+
+.primary-menu .sf-sub-indicator {
+    display: none;
+}
+
+.primary-menu a.menu-link {
+    display: none;
+}
+
+.primary-menu .menu-item-home{
+    width: 65px;
+}
+
+.primary-menu .menu-item-home a{
+    background: url("images/home.png") no-repeat 50% 50%;
+    text-indent: -999em;
+    display: block;
+}
+
+.primary-menu .menu-item-home a:hover{
+    background-color: #A60000;
+    background-image: url("images/home.png");
+    background-repeat: no-repeat;
+    background-position:	50% 50%;
+}
+
+.primary-menu ul li a
+{
+    font-family: 'Interstate';
+    letter-spacing: 0;
+    text-transform: uppercase;
+    font-weight: normal;
 }
 
 /* 9. MEDIA QUERIES
@@ -582,7 +774,6 @@ a:hover {
 
     .primary-menu ul {
         float: none;
-        display: none;
         width: 100%;
         height: auto;
     }
@@ -811,7 +1002,6 @@ a:hover {
 
     .primary-menu ul {
         float: none;
-        display: none;
         width: 100%;
         height: auto;
     }

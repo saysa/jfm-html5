@@ -141,7 +141,7 @@
     <div id="con" class="content-wrap">
 
         <!-- Static navbar -->
-        <nav class="navbar navbar-default" role="navigation">
+        <nav class="navbar navbar-default primary-menu" role="navigation">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -150,15 +150,12 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Project name</a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home {% if front_page_index is defined %} current_page_item{% endif %}"><a href="{{ path('index') }}" title="Accueil">Accueil</a></li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Radio <span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="#">Action</a></li>
                                 <li><a href="#">Another action</a></li>
@@ -169,12 +166,24 @@
                                 <li><a href="#">One more separated link</a></li>
                             </ul>
                         </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Musique <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">News</a></li>
+                                <li><a href="#">Interviews</a></li>
+                                <li><a href="#">Live report</a></li>
+                                <li><a href="#">Chroniques</a></li>
+                            </ul>
+                        </li>
+                        <li class="active"><a href="#">Manga/Anime</a></li>
+                        <li><a href="#">Jeux vidéos</a></li>
+                        <li><a href="#">Culture</a></li>
+                        <li><a href="#">Artistes</a></li>
+                        <li><a href="#">Galerie</a></li>
+                        <li><a href="#">Vyper</a></li>
+
                     </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="./">Default</a></li>
-                        <li><a href="../navbar-static-top/">Static top</a></li>
-                        <li><a href="../navbar-fixed-top/">Fixed top</a></li>
-                    </ul>
+
                 </div><!--/.nav-collapse -->
             </div><!--/.container-fluid -->
         </nav>
