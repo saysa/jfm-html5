@@ -62,6 +62,11 @@ a:hover {
     overflow: hidden;
 }
 
+.content-wrap>.content-wrap-margin {
+    margin: 0 5px;
+    background: red;
+}
+
 .main{
     overflow: hidden;
 }
@@ -80,6 +85,10 @@ a:hover {
 }
 
 /*======== Common Elements =========*/
+.bg-white {
+    background: #FFF;
+}
+
 .main-color{
     color: #A60000;
 }
@@ -94,6 +103,10 @@ a:hover {
 
 .second-color-bg{
     background: #D35F5F;
+}
+
+.main-color-reverse {
+    background: #414140;
 }
 
 .button {
@@ -355,6 +368,7 @@ a:hover {
 /* ========= Primary Menu ========= */
 .navbar {
     border-radius: 0;
+    margin-bottom: 0;
 }
 .navbar-default {
     border: none;
@@ -533,6 +547,142 @@ nav .container-fluid>.navbar-collapse {
     letter-spacing: 0;
     text-transform: uppercase;
     font-weight: normal;
+}
+
+/* 4. HOMEPAGE
+ * ======================== */
+
+/*==== Carousel ===*/
+.header-carousel{
+    padding: 20px 0;
+}
+
+.header-carousel .content-wrap{
+    overflow: visible;
+}
+
+.header-carousel .item{
+    margin-right: 15px;
+    color: #FFF;
+    overflow: hidden;
+    position: relative;
+}
+
+.header-carousel .item a{
+    color: #FFFFFF
+}
+
+.header-carousel .post-icon{
+    width: 20px;
+    float: left;
+    margin-right: 5px;
+}
+
+.header-carousel .post-icon i{
+    font-size: 20px;
+}
+
+.header-carousel .owl-carousel{
+    margin-left: 5px;
+}
+
+.owl-prev{
+    background: url("images/arrow-left.png") no-repeat center center;
+}
+
+.owl-next{
+    background: url("images/arrow-right.png") no-repeat center center;
+}
+
+.header-carousel .owl-prev{
+    left: -70px;
+}
+
+.header-carousel .owl-next{
+    right: -55px;
+}
+
+.header-carousel .loading{
+    min-height: 190px;
+    background: url(images/loader.gif) no-repeat center center
+}
+
+.header-carousel .grabbing {
+    cursor:url(images/grab.png) 8 8, move;
+}
+
+.header-carousel .post-details  {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 335px;
+    padding-left: 20px;
+    height: 100%;
+    border-radius: 2px;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.header-carousel .post-details:hover   {
+    box-shadow: 0 0 200px rgb(0, 0, 0) inset;
+    -webkit-box-shadow: 0 0 200px rgb(0, 0, 0) inset;
+    -moz-box-shadow: 0 0 100px rgb(0, 0, 0) inset;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.header-carousel .post-details .post-title{
+    overflow: hidden;
+}
+
+.header-carousel .post-details h4{
+    line-height: 1.1;
+}
+
+.header-carousel .post-wrap{
+    position: absolute;
+    top: 0;
+    margin-top: 155px;
+    width: 90%;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.header-carousel .post-details .excerpt{
+    margin: 5px 0;
+}
+
+.header-carousel .post-details .post-desc{
+    width: 90%;
+    display: none;
+    line-height: 1.3;
+}
+
+.header-carousel .post-details:hover .post-wrap{
+    margin-top: 20px;
+}
+
+.header-carousel .post-details:hover .post-desc {
+    display: block;
+}
+
+.header-carousel .post-details .more {
+    border: 2px solid #FFFFFF;
+    display: inline-block;
+    padding: 7px 10px 9px;
+    margin-top: 10px;
 }
 
 /* 9. MEDIA QUERIES

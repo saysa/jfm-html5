@@ -175,7 +175,7 @@
                                 <li><a href="#">Chroniques</a></li>
                             </ul>
                         </li>
-                        <li class="active"><a href="#">Manga/Anime</a></li>
+                        <li class="current_page_item"><a href="#">Manga/Anime</a></li>
                         <li><a href="#">Jeux vidéos</a></li>
                         <li><a href="#">Culture</a></li>
                         <li><a href="#">Artistes</a></li>
@@ -187,6 +187,47 @@
                 </div><!--/.nav-collapse -->
             </div><!--/.container-fluid -->
         </nav>
+
+        <div class="header-carousel section main-color-reverse">
+            <div class="content-wrap">
+                <div id="carousel-posts" class="owl-carousel">
+                    <div class="item">
+                        <img src="http://betatest.japanfm.fr/uploads/pic/2014/10/7318-1413747752.jpeg?size=374-200" alt="5">
+                    </div>
+
+                    <div class="item">
+                        <img src="http://betatest.japanfm.fr/uploads/pic/2014/10/7318-1413747752.jpeg?size=374-200" alt="5">
+                    </div>
+
+                    <div class="item">
+                        <img src="http://betatest.japanfm.fr/uploads/pic/2014/10/7318-1413747752.jpeg?size=374-200" alt="5">
+                    </div>
+
+                    <div class="item">
+                        <img src="http://betatest.japanfm.fr/uploads/pic/2014/10/7318-1413747752.jpeg?size=374-200" alt="5">
+                    </div>
+
+                    <div class="item">
+                        <img src="http://betatest.japanfm.fr/uploads/pic/2014/10/7318-1413747752.jpeg?size=374-200" alt="5">
+                    </div>
+
+                    <div class="item">
+                        <img src="http://betatest.japanfm.fr/uploads/pic/2014/10/7318-1413747752.jpeg?size=374-200" alt="5">
+                    </div>
+
+                    <div class="item">
+                        <img src="http://betatest.japanfm.fr/uploads/pic/2014/10/7318-1413747752.jpeg?size=374-200" alt="5">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="content-wrap bg-white">
+            <div class="content-wrap-margin">
+                r
+            </div>
+        </div>
 
         <div class="marquee">jQuery marquee is the best <b>marquee</b> plugin in the world</div>
 
@@ -228,6 +269,20 @@
 
 <script>
     $(document).ready(function() {
+
+        $("#carousel-posts").owlCarousel({
+            slideSpeed: 200,					//Slide speed in milliseconds
+            paginationSpeed: 800,				//Pagination speed in milliseconds
+            autoPlay: 5000,						//Autoplay every 5 seconds.
+            stopOnHover: true,					//Stop autoplay on mouse hover
+            navigation: false,					//Display "next" and "prev" buttons.
+            pagination: true,					//Display pagination
+            items : 3,							//Number of items to display
+            itemsDesktop : [1199,3],			//Number of slides visible with a particular browser width.
+            itemsTablet: [736,2],
+            itemsMobile: [462,1]
+        });
+
         $("#owl-demo").owlCarousel({
 
             navigation : true,
