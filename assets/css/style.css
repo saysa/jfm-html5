@@ -383,6 +383,7 @@ nav .container-fluid>.navbar-collapse {
     padding: 0;
 }
 
+/*
 .primary-menu .mobile-menu{
     overflow: hidden;
 }
@@ -410,30 +411,28 @@ nav .container-fluid>.navbar-collapse {
 .primary-menu .content-wrap{
     overflow: visible;
 }
-
+*/
 .primary-menu {
     width: 100%;
-    /*background: #414140;*/
     background: #A60000;
     position: relative;
     display: block;
     z-index: 30;
-    font-family: 'Noto Sans', Helvetica, Arial, sans-serif;
 }
 
 .primary-menu ul {
     float: left;
     list-style: none;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     position: relative;
     z-index: 99;
 }
 
 .primary-menu ul.navbar-nav li {
     float: left;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     position: relative;
 }
 
@@ -441,10 +440,23 @@ nav .container-fluid>.navbar-collapse {
     display: block;
     padding: 14px;
     text-align: center;
-    font-size: 16px;
-    font-weight: 700;
     line-height: 22px;
     color: #FFF;
+}
+
+.primary-menu ul.navbar-nav li.menu-item-home a{
+    display: block;
+    padding: 14px 25px;
+    text-align: center;
+    line-height: 22px;
+    color: #FFF;
+    background: url("images/home.png") no-repeat 50% 50%;
+    text-indent: -999em;
+    display: block;
+}
+
+.primary-menu ul.navbar-nav li.menu-item-home a:hover{
+    background: #414140 url("images/home.png") no-repeat 50% 50%;
 }
 
 .primary-menu .current-menu-item ,
@@ -462,9 +474,13 @@ nav .container-fluid>.navbar-collapse {
 }
 
 .primary-menu ul.navbar-nav li ul li {
-    float:none;
-    padding:0px;
+    float:left;
+    padding:0;
 }
+
+
+
+
 
 .primary-menu ul li ul li a,
 .primary-menu ul li:hover ul li a,
@@ -528,18 +544,8 @@ nav .container-fluid>.navbar-collapse {
     width: 65px;
 }
 
-.primary-menu .menu-item-home a{
-    background: url("images/home.png") no-repeat 50% 50%;
-    text-indent: -999em;
-    display: block;
-}
 
-.primary-menu .menu-item-home a:hover{
-    background-color: #A60000;
-    background-image: url("images/home.png");
-    background-repeat: no-repeat;
-    background-position:	50% 50%;
-}
+
 
 .primary-menu ul li a
 {
