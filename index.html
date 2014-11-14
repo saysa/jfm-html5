@@ -51,177 +51,192 @@
 <!--[if lt IE 7]>
 <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 <![endif]-->
+<header id="header" class="container-fluid">
+    <div class="row">
+        <section class="top main-color-bg col-lg-12">
+            <div class="content-wrap">
+                <div class="left">
+                    <ul class="list">
 
 
-<header id="header">
-    <div class="top main-color-bg">
-        <div class="content-wrap">
-            <div class="left">
-                <ul class="list">
+                        <li>
+                            <i class="fa fa-star"></i>
+                            <a href="/a-propos">A propos</a>
+                        </li>
 
+                        <li>
+                            <i class="fa fa-users"></i>
+                            <a href="/l-equipe">L'Equipe</a>
+                        </li>
 
-                    <li>
-                        <i class="fa fa-star"></i>
-                        <a href="/a-propos">A propos</a>
-                    </li>
+                        <li>
+                            <i class="fa fa-envelope"></i>
+                            <a href="/contact">Contact</a>
+                        </li>
 
-                    <li>
-                        <i class="fa fa-users"></i>
-                        <a href="/l-equipe">L'Equipe</a>
-                    </li>
+                        <li>
+                            <i class="fa fa-flag"></i>
+                            <a href="/partenaires">Partenaires</a>
+                        </li>
 
-                    <li>
-                        <i class="fa fa-envelope"></i>
-                        <a href="/contact">Contact</a>
-                    </li>
-
-                    <li>
-                        <i class="fa fa-flag"></i>
-                        <a href="/partenaires">Partenaires</a>
-                    </li>
-
-                </ul>
+                    </ul>
+                </div>
+                <div class="social">
+                    <ul class="list">
+                        <li class="gplus"><a href="#"><i class="fa fa-comments"></i> Live Chat</a></li>
+                        <li class="youtube"><a href="#"><i class="fa fa-play-circle"></i> Live Vidéo</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="social">
-                <ul class="list">
-                    <li class="gplus"><a href="#"><i class="fa fa-comments"></i> Live Chat</a></li>
-                    <li class="youtube"><a href="#"><i class="fa fa-play-circle"></i> Live Vidéo</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+        </section>
+        <!-- /top -section -->
+        <section class="col-lg-12 ticker-section">
+            <div class="content-wrap">
+                <div class="ticker" style="display: block;">
 
-    <div class="ticker-section">
-        <div class="content-wrap">
-            <div class="ticker" style="display: block;">
-
-                <div class="title second-color-bg">
-                    <div class="ticker-icon">
-                        <i class="icon-rocket"></i>
+                    <div class="title second-color-bg">
+                        <div class="ticker-icon">
+                            <i class="icon-rocket"></i>
+                        </div>
+                        <h6>En ce moment</h6>
                     </div>
-                    <h6>En ce moment</h6>
+
+                    <div class="tickercontainer"><div class="mask">
+                        <ul id="ticker-posts" class="newsticker" >
+                            <li>
+                                <a href="#">Je suis un marquee</a>
+                                <div class="sep"></div>
+                            </li>
+                        </ul>
+                    </div></div>
+
                 </div>
 
-                <div class="tickercontainer"><div class="mask">
-                    <ul id="ticker-posts" class="newsticker" >
-                        <li>
-                            <a href="#">Je suis un marquee</a>
-                            <div class="sep"></div>
-                        </li>
-                    </ul>
-                </div></div>
+                <div class="search">
+                    <script>
+                        (function() {
+                            var cx = '001775883577770650674:f0b74h1hzdo';
+                            var gcse = document.createElement('script');
+                            gcse.type = 'text/javascript';
+                            gcse.async = true;
+                            gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                                    '//www.google.com/cse/cse.js?cx=' + cx;
+                            var s = document.getElementsByTagName('script')[0];
+                            s.parentNode.insertBefore(gcse, s);
+                        })();
+                    </script>
+                    <gcse:search></gcse:search>
 
+                </div>
             </div>
-
-            <div class="search">
-                <script>
-                    (function() {
-                        var cx = '001775883577770650674:f0b74h1hzdo';
-                        var gcse = document.createElement('script');
-                        gcse.type = 'text/javascript';
-                        gcse.async = true;
-                        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-                                '//www.google.com/cse/cse.js?cx=' + cx;
-                        var s = document.getElementsByTagName('script')[0];
-                        s.parentNode.insertBefore(gcse, s);
-                    })();
-                </script>
-                <gcse:search></gcse:search>
-
-            </div>
-
-        </div>
+        </section>
+        <!-- /ticker-section -->
     </div>
-    <!-- /ticker-section -->
-
 </header>
 
 <div id="casing" class="container-fluid">
     <div id="casing-top"></div>
-    <div id="con" class="content-wrap">
+    <div id="main-container" class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="row">
+                    <!-- Static navbar -->
+                    <nav class="navbar navbar-default primary-menu" role="navigation">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div id="navbar" class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav">
+                                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home {% if front_page_index is defined %} current_page_item{% endif %}"><a href="{{ path('index') }}" title="Accueil">Accueil</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Radio <span class="caret"></span></a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="#">Action</a></li>
+                                            <li><a href="#">Another action</a></li>
+                                            <li><a href="#">Something else here</a></li>
+                                            <li class="divider"></li>
+                                            <li class="dropdown-header">Nav header</li>
+                                            <li><a href="#">Separated link</a></li>
+                                            <li><a href="#">One more separated link</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Musique <span class="caret"></span></a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="#">News</a></li>
+                                            <li><a href="#">Interviews</a></li>
+                                            <li><a href="#">Live report</a></li>
+                                            <li><a href="#">Chroniques</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="current_page_item"><a href="#">Manga/Anime</a></li>
+                                    <li><a href="#">Jeux vidéos</a></li>
+                                    <li><a href="#">Culture</a></li>
+                                    <li><a href="#">Artistes</a></li>
+                                    <li><a href="#">Galerie</a></li>
+                                    <li><a href="#">Vyper</a></li>
 
-        <!-- Static navbar -->
-        <nav class="navbar navbar-default primary-menu" role="navigation">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+                                </ul>
+
+                            </div><!--/.nav-collapse -->
+                        </div><!--/.container-fluid -->
+                    </nav>
+
+                    <div class="header-carousel section main-color-reverse">
+                        <div class="">
+                            <div id="carousel-posts" class="owl-carousel">
+                                <div class="item">
+                                    <img src="http://betatest.japanfm.fr/uploads/pic/2014/10/7318-1413747752.jpeg?size=374-200" alt="5">
+                                </div>
+
+                                <div class="item">
+                                    <img src="http://betatest.japanfm.fr/uploads/pic/2014/10/7318-1413747752.jpeg?size=374-200" alt="5">
+                                </div>
+
+                                <div class="item">
+                                    <img src="http://betatest.japanfm.fr/uploads/pic/2014/10/7318-1413747752.jpeg?size=374-200" alt="5">
+                                </div>
+
+                                <div class="item">
+                                    <img src="http://betatest.japanfm.fr/uploads/pic/2014/10/7318-1413747752.jpeg?size=374-200" alt="5">
+                                </div>
+
+                                <div class="item">
+                                    <img src="http://betatest.japanfm.fr/uploads/pic/2014/10/7318-1413747752.jpeg?size=374-200" alt="5">
+                                </div>
+
+                                <div class="item">
+                                    <img src="http://betatest.japanfm.fr/uploads/pic/2014/10/7318-1413747752.jpeg?size=374-200" alt="5">
+                                </div>
+
+                                <div class="item">
+                                    <img src="http://betatest.japanfm.fr/uploads/pic/2014/10/7318-1413747752.jpeg?size=374-200" alt="5">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.Menu + Carousel -->
                 </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home {% if front_page_index is defined %} current_page_item{% endif %}"><a href="{{ path('index') }}" title="Accueil">Accueil</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Radio <span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li class="divider"></li>
-                                <li class="dropdown-header">Nav header</li>
-                                <li><a href="#">Separated link</a></li>
-                                <li><a href="#">One more separated link</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Musique <span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">News</a></li>
-                                <li><a href="#">Interviews</a></li>
-                                <li><a href="#">Live report</a></li>
-                                <li><a href="#">Chroniques</a></li>
-                            </ul>
-                        </li>
-                        <li class="current_page_item"><a href="#">Manga/Anime</a></li>
-                        <li><a href="#">Jeux vidéos</a></li>
-                        <li><a href="#">Culture</a></li>
-                        <li><a href="#">Artistes</a></li>
-                        <li><a href="#">Galerie</a></li>
-                        <li><a href="#">Vyper</a></li>
 
-                    </ul>
 
-                </div><!--/.nav-collapse -->
-            </div><!--/.container-fluid -->
-        </nav>
-
-        <div class="header-carousel section main-color-reverse">
-            <div class="content-wrap">
-                <div id="carousel-posts" class="owl-carousel">
-                    <div class="item">
-                        <img src="http://betatest.japanfm.fr/uploads/pic/2014/10/7318-1413747752.jpeg?size=374-200" alt="5">
-                    </div>
-
-                    <div class="item">
-                        <img src="http://betatest.japanfm.fr/uploads/pic/2014/10/7318-1413747752.jpeg?size=374-200" alt="5">
-                    </div>
-
-                    <div class="item">
-                        <img src="http://betatest.japanfm.fr/uploads/pic/2014/10/7318-1413747752.jpeg?size=374-200" alt="5">
-                    </div>
-
-                    <div class="item">
-                        <img src="http://betatest.japanfm.fr/uploads/pic/2014/10/7318-1413747752.jpeg?size=374-200" alt="5">
-                    </div>
-
-                    <div class="item">
-                        <img src="http://betatest.japanfm.fr/uploads/pic/2014/10/7318-1413747752.jpeg?size=374-200" alt="5">
-                    </div>
-
-                    <div class="item">
-                        <img src="http://betatest.japanfm.fr/uploads/pic/2014/10/7318-1413747752.jpeg?size=374-200" alt="5">
-                    </div>
-
-                    <div class="item">
-                        <img src="http://betatest.japanfm.fr/uploads/pic/2014/10/7318-1413747752.jpeg?size=374-200" alt="5">
-                    </div>
-
+                <div class="row" id="wrapper-2-big">
+                    <section class="col-sm-8">Main Content</section>
+                    <section class="col-sm-4">Aside</section>
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div id="con" class="content-wrap">
 
         <div>
             <div class="col-md-12 bg-white">
@@ -276,7 +291,7 @@
             autoPlay: 5000,						//Autoplay every 5 seconds.
             stopOnHover: true,					//Stop autoplay on mouse hover
             navigation: false,					//Display "next" and "prev" buttons.
-            pagination: true,					//Display pagination
+            pagination: false,					//Display pagination
             items : 3,							//Number of items to display
             itemsDesktop : [1199,3],			//Number of slides visible with a particular browser width.
             itemsTablet: [736,2],

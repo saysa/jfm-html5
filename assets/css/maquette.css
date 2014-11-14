@@ -1,0 +1,40 @@
+[class*="col-"], footer {
+    background-color: lightgreen;
+    border: 2px solid black;
+    border-radius: 6px;
+    line-height: 40px;
+    text-align: center;
+    opacity: 0.3;
+}
+
+
+@media all and (min-width: 992px) {
+
+    /* alter Bootstrap */
+    .container {
+        width: 960px;
+    }
+
+    #casing {
+        /*background: black url("../img/casing/hg3/hab-int-hg3.jpg") no-repeat 50% 0;*/
+        background: black url("http://eu1.swbdds.com/9/33/77/9/@/upload/hab14-hpv-rec4.jpg") no-repeat 50% 0;
+
+    }
+}
+
+#main-container {
+    margin-top: 10px;
+}
+
+#wrapper-2-big {
+    padding: 0 15px;
+}
+
+#casing-top {
+    height: 210px;
+}
+
+#test-height {
+    height: 500px;
+    border: 1px solid red;
+}
