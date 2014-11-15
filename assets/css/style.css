@@ -48,6 +48,7 @@ a:visited {
 
 a:hover {
     color: #A60000;
+    text-decoration: none;
 }
 
 /*===== Layout =====*/
@@ -382,8 +383,14 @@ nav .container-fluid>.navbar-collapse {
     margin: 0;
     padding: 0;
 }
+.dropdown-menu > li {
+    display: inline-block;
+    float:left;
+}
+.open > ul {
+    display: inline-flex !important;
+}
 
-/*
 .primary-menu .mobile-menu{
     overflow: hidden;
 }
@@ -408,39 +415,16 @@ nav .container-fluid>.navbar-collapse {
     padding: 0;
 }
 
-.primary-menu .content-wrap{
-    overflow: visible;
-}
-*/
+
+
 .primary-menu {
     width: 100%;
     background: #A60000;
-    position: relative;
     display: block;
     z-index: 30;
 }
 
-.primary-menu ul {
-    float: left;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    z-index: 99;
-}
-
-.primary-menu ul.navbar-nav li {
-    float: left;
-    padding: 0;
-    margin: 0;
-    position: relative;
-}
-
 .primary-menu ul.navbar-nav li a {
-    display: block;
-    padding: 14px;
-    text-align: center;
-    line-height: 22px;
     color: #FFF;
 }
 
@@ -465,14 +449,22 @@ nav .container-fluid>.navbar-collapse {
     background: #414140;
     color: #FFF;
 }
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
+    background: #414140;
+    color: #FFF;
+}
 
 .primary-menu ul li ul {
-    display: none;
+
     position: absolute;
     padding: 0;
     margin-top: 0;
+    left: 0;
+    top: 100%;
+    width: auto;
+    background: #414140;
 }
-
+/*
 .primary-menu ul.navbar-nav li ul li {
     float:left;
     padding:0;
@@ -539,7 +531,7 @@ nav .container-fluid>.navbar-collapse {
 .primary-menu a.menu-link {
     display: none;
 }
-
+*/
 .primary-menu .menu-item-home{
     width: 65px;
 }
@@ -1345,6 +1337,6 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
 }
 
 #wrapper-2-big {
-    padding: 0 15px;
+
     background: white;
 }
