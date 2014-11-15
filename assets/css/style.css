@@ -274,7 +274,7 @@ a:hover {
 }
 
 .ticker .tickercontainer {
-    width: 750px;
+    width: 600px;
     margin: 0;
     padding: 3px 0;
     overflow: hidden;
@@ -319,6 +319,8 @@ a:hover {
     margin: 0 40px;
     background: url("images/sep.png") no-repeat center center;
 }
+
+
 
 /*======= Header Search =======*/
 .ticker-section{
@@ -1330,6 +1332,20 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
         background: black url("http://eu1.swbdds.com/9/33/77/9/@/upload/hab14-hpv-rec4.jpg") no-repeat 50% 0;
 
     }
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: transparent;
+}
+.navbar-default .navbar-toggle {
+    border: none;
+    color: #FFF;
+}
+
+.navbar-toggle {
+    font-size: 23px;
+    padding: 6px 0 0 0;
+    margin: 0 25px 0 0;
 }
 
 #main-container {

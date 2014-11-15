@@ -26,14 +26,7 @@
     <!-- Font awesome -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <style>
-        .marquee {
-        width: 300px;
-        overflow: hidden;
-        border: 1px solid #ccc;
-        background: #ccc;
-    }
-    </style>
+
 
     <link href="assets/css/reset.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
@@ -94,15 +87,24 @@
             <div class="content-wrap">
                 <div class="ticker" style="display: block;">
 
-                    <div class="title second-color-bg">
-                        <div class="ticker-icon">
-                            <i class="icon-rocket"></i>
-                        </div>
-                        <h6>En ce moment</h6>
+                    <div class="title">
+                        <img src="http://betatest.japanfm.fr/assets/img/logo.png" height="50">
                     </div>
 
                     <div class="tickercontainer"><div class="mask">
-                        <ul id="ticker-posts" class="newsticker" >
+                        <ul id="ticker-posts" class="newsticker marquee" >
+                            <li>
+                                <a href="#">Je suis un marquee</a>
+                                <div class="sep"></div>
+                            </li>
+                            <li>
+                                <a href="#">Je suis un marquee</a>
+                                <div class="sep"></div>
+                            </li>
+                            <li>
+                                <a href="#">Je suis un marquee</a>
+                                <div class="sep"></div>
+                            </li>
                             <li>
                                 <a href="#">Je suis un marquee</a>
                                 <div class="sep"></div>
@@ -145,10 +147,8 @@
                         <div class="container-fluid">
                             <div class="navbar-header">
                                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <i class="fa fa-list"></i>
                                     <span class="sr-only">Toggle navigation</span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
                                 </button>
                             </div>
                             <div id="navbar" class="navbar-collapse collapse">
@@ -229,7 +229,6 @@
                 <div class="row" id="wrapper-2-big">
                     <section class="col-sm-8">Main Content
 
-                        <div class="marquee">jQuery marquee is the best <b>marquee</b> plugin in the world</div>
 
                         <div id="owl-demo" class="owl-carousel">
 
@@ -242,7 +241,15 @@
                         <div id='calendar'></div>
 
                     </section>
-                    <section class="col-sm-4">Aside</section>
+                    <section class="col-sm-4">
+                        <aside class="widget">
+                            <ul>
+                                <li class="facebook">
+
+                                </li>
+                            </ul>
+                        </aside>
+                    </section>
                 </div>
             </div>
         </div>
