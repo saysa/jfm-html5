@@ -20,11 +20,11 @@ Tags: white, black, gray, light, one-column, two-columns, right-sidebar, fixed-w
  * 8.  FOOTER
  * 10. MEDIA QUERIES
  **/
-
+/*
 @import url(//fonts.googleapis.com/css?family=Noto+Sans:700,400);
 @import url(//fonts.googleapis.com/css?family=Droid+Sans);
 @import url(//fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext);
-
+*/
 /* 1. BASE
  * ======================== */
 
@@ -336,6 +336,7 @@ h6{
 .ticker{
     overflow: hidden;
     display: none;
+    margin-top: 25px;
 }
 
 .ticker .title{
@@ -2285,6 +2286,11 @@ a.small {
     height: 24px;
     overflow: hidden;
     text-transform: uppercase;
+    max-width: 308px;
+}
+
+.jp-title b {
+    font-weight: 700;
 }
 
 .rock_controls_default {
@@ -2311,8 +2317,8 @@ a.small {
 
 
 .rock_controls div {
-    width: 63px;
-    height: 67px;
+    width: 73px;
+    height: 72px;
     background: #E13F43;
     line-height: 67px;
     color: #fff;
@@ -2320,9 +2326,14 @@ a.small {
     text-align: center;
 }
 
+ul#header-right {
+    margin: 6px 0 0 0;
+    padding: 0;
+}
 
-
-
+ul#header-right li {
+    display: inline-block;
+}
 
 
 
@@ -2494,19 +2505,22 @@ a.small {
 }
 
 /* Social */
-#social-links li {
-    float: left;
+li#social-facebook,
+li#social-twitter {
+
     margin-right: 10px;
     position: relative;
 }
 
-#social-links li a {
+li#social-facebook a,
+li#social-twitter a {
     width: 30px;
     height: 30px;
     display: inline-block;
 }
 
-#social-links li span {
+li#social-facebook span,
+li#social-twitter span {
     display: none;
 }
 
